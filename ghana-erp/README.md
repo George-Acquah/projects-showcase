@@ -67,21 +67,31 @@ Built on a **microservices-oriented monorepo architecture**, this platform demon
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-**Architecture Diagrams (Draw.io)**
+**Architecture Diagrams (Draw.io & exported images)**
 
-Diagrams for Ghana ERP have been created and are available in the Draw.io file: [Ghana ERP Diagrams - Draw.io](https://drive.google.com/file/d/1FtMUtqF33-xPjxBSxLvFyzylhNuviUJ3/view?usp=sharing)
+Diagrams for Ghana ERP are available in the Draw.io file: [Ghana ERP Diagrams - Draw.io](https://drive.google.com/file/d/1FtMUtqF33-xPjxBSxLvFyzylhNuviUJ3/view?usp=sharing)
 
-Included diagrams (in the Draw.io file):
-- **System Architecture** — Frontend → API Gateway → Module Layer → Database
-- **Multi-tenant Data Flow** — Login/auth flow with tenant context and RLS
-- **Event-Driven Communication** — Events between Sales, Finance, Inventory, Notifications
-- **Database Schema** — ER diagram (tables & relationships)
-- **Observability & Infrastructure** — Prometheus, Grafana, Loki, Redis, BullMQ
+Exported images (committed to this repo under `./assets/`):
 
-How to view:
-- Open the link above and choose **Open with > diagrams.net** (or download PNG/SVG exports)
+**Multi-tenant Data Flow**
 
-If you'd like, I can export PNG/SVGs from the Draw.io file and commit them to `/projects-showcase/ghana-erp/diagrams/` and update this README with the file paths — tell me and I will do that.
+![Multi-tenant Data Flow](./assets/dataflow.png)
+
+**Event-Driven Communication**
+
+![Event-Driven Communication](./assets/event-driven-communication.png)
+
+**Database Schemas (Finance / HR)**
+
+![Finance Schema](./assets/finance-schemas.png)
+
+![HR Schema](./assets/hr-schemas.png)
+
+**Type-safe API Development Flow**
+
+![Type-safe API Flow](./assets/type-safe-flow.png)
+
+How to view: Open the Draw.io link or view the exported images in `./assets/` (PNG). If you want different sized exports or SVGs, I can generate and add them to `/projects-showcase/ghana-erp/diagrams/` — tell me which formats you prefer.
 ---
 
 ## Core Technical Features
@@ -161,13 +171,19 @@ The system employs a **single-database, multi-schema approach** using PostgreSQL
    - Read replicas for reporting queries to reduce load on primary database
    - Archival strategy for historical data beyond retention period
 
-#### Database Schema Diagram Placeholder:
-> 📸 **Recording Needed:** Generate an ER diagram using dbdiagram.io or similar tool showing:
-> - Core tables (users, tenants, products, invoices, employees, etc.)
-> - Relationships and foreign key constraints
-> - Multi-tenant column annotations
-> - Indexes and unique constraints
+#### Database Schema Diagrams
 
+The core database schemas have been exported from the Draw.io file and added to the repository under `./assets/`.
+
+**Finance Schema**
+
+![Finance Schema](./assets/finance-schemas.png)
+
+**HR Schema**
+
+![HR Schema](./assets/hr-schemas.png)
+
+If you'd like a consolidated ER diagram (all domains in one view) or an SVG export, tell me and I will generate and commit it to `/projects-showcase/ghana-erp/diagrams/`.
 ---
 
 ## Functional Walkthrough
