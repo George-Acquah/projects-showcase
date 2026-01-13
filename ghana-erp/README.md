@@ -67,14 +67,21 @@ Built on a **microservices-oriented monorepo architecture**, this platform demon
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-**Architecture Diagram Placeholder:**
-> 📸 **Recording Needed:** Create a Mermaid or Excalidraw diagram showing:
-> - Frontend → API Gateway → Module Layer → Database flow
-> - Event-driven communication between modules
-> - Redis caching strategy
-> - Multi-tenant data isolation model
-> - Observability stack integration
+**Architecture Diagrams (Draw.io)**
 
+Diagrams for Ghana ERP have been created and are available in the Draw.io file: [Ghana ERP Diagrams - Draw.io](https://drive.google.com/file/d/1FtMUtqF33-xPjxBSxLvFyzylhNuviUJ3/view?usp=sharing)
+
+Included diagrams (in the Draw.io file):
+- **System Architecture** — Frontend → API Gateway → Module Layer → Database
+- **Multi-tenant Data Flow** — Login/auth flow with tenant context and RLS
+- **Event-Driven Communication** — Events between Sales, Finance, Inventory, Notifications
+- **Database Schema** — ER diagram (tables & relationships)
+- **Observability & Infrastructure** — Prometheus, Grafana, Loki, Redis, BullMQ
+
+How to view:
+- Open the link above and choose **Open with > diagrams.net** (or download PNG/SVG exports)
+
+If you'd like, I can export PNG/SVGs from the Draw.io file and commit them to `/projects-showcase/ghana-erp/diagrams/` and update this README with the file paths — tell me and I will do that.
 ---
 
 ## Core Technical Features
