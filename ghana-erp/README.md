@@ -105,8 +105,6 @@ The core database schemas have been exported from the Draw.io file and added to 
 **HR Schema**
 
 ![HR Schema](./assets/hr-schemas.png)
-
-If you'd like a consolidated ER diagram (all domains in one view) or an SVG export, tell me and I will generate and commit it to `/projects-showcase/ghana-erp/diagrams/`.
 ---
 
 ## Functional Walkthrough
@@ -134,16 +132,6 @@ If you'd like a consolidated ER diagram (all domains in one view) or an SVG expo
 **Technical highlight:** End-to-end type safety from database → API → frontend
 
 
-### 4. Inventory Management
-**What to record:**
-- Add new product to catalog
-- Record stock receipt from supplier
-- Process a sale that decrements inventory
-- View low-stock alerts
-- Generate inventory valuation report
-
-**Technical highlight:** Real-time inventory tracking across warehouses
-
 ---
 
 ### 5. RBAC & Permissions System
@@ -154,20 +142,6 @@ If you'd like a consolidated ER diagram (all domains in one view) or an SVG expo
 - Attempt unauthorized action → show 403 Forbidden response
 
 **Technical highlight:** Fine-grained role-based access control
-
----
-
-### 6. Observability Dashboard
-**What to record:**
-- Open Grafana dashboard showing API metrics
-- Trigger high load (simulate 100 concurrent requests)
-- Show request latency graphs, error rates
-- Demonstrate Loki logs filtered by tenant ID
-- Show health check endpoint status
-
-**Technical highlight:** Production-ready monitoring and alerting
-
----
 
 ## Tech Stack
 
