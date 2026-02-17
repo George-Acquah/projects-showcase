@@ -107,8 +107,6 @@ The core database schemas have been exported from the Draw.io file and added to 
 
 ## Functional Walkthrough
 
-> 🎥 **Video/GIF Placeholders** - Record the following sequences to demonstrate production-level functionality:
-
 ### 1. Multi-Tenant Onboarding Flow
 **What to record:**
 - Admin creates a new tenant organization
