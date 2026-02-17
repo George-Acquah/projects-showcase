@@ -41,8 +41,6 @@ Exported images (committed to this repo under `./assets/`):
 ![Prometheus Metrics](./assets/prom-ghana-erp.png)
 
 ![Grafana Dashboards](./assets/grafana-logs-erp.png)
-
-How to view: Open the Draw.io link or view the exported images in `./assets/` (PNG). If you want different sized exports or SVGs, I can generate and add them to `/projects-showcase/ghana-erp/diagrams/` — tell me which formats you prefer.
 ---
 
 ## Core Technical Features
