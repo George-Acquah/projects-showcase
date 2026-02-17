@@ -687,5 +687,3 @@ erDiagram
         timestamp last_updated
     }
 ```
-
-**Note**: These diagrams are designed to be comprehensive yet clear. Feel free to simplify them based on your specific needs or the level of detail you want to showcase in your portfolio.
